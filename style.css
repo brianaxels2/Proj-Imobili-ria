@@ -1,0 +1,348 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* cabeçalho */ 
+body {
+  overflow-x: hidden;
+}
+header {
+    height: 100px;
+    background-color: #0076CE;
+}
+.container {
+    display: flex;
+    height: 100px;
+    max-width: 1140px;
+    margin: auto;
+    align-items: center;
+}
+.title a {
+    text-decoration: none;
+    display: flex;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: white;
+}
+.menu {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+.menu ul {
+    display: flex;
+}
+.menu li {
+    list-style: none;
+}
+.menu li a {
+    color: white;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    height: 95px;
+    display: flex;
+    padding-left: 8px;
+    padding-right: 8px;   
+    border-bottom: 4px solid #0076CE;
+}
+.menu li a:hover {
+    border-bottom: 5px solid rgba(0, 0, 0, 0.733);
+    transition: 0.5s ease-in-out;
+}
+
+/* fim do cabeçalho */ 
+
+/* slider */ 
+
+#slidershow {
+    margin: 0;
+    display: flex;
+    height: calc(100vh - 100px);
+}
+.slider {
+    flex: 1;
+    overflow: hidden;
+}
+.slider-width {
+    height: 100%;
+    display: flex;
+    transition: all ease-in-out 1s;
+}
+.slider-item {
+    width: 100vw;
+    height: inherit;
+    background-position: center;
+    background-size: cover;
+}
+.slider-controls {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.slider-control {
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.pontos {
+    width: 100vw;
+    height: 20px;
+    position: absolute;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.ponto {
+    width: 15px;
+    height: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.514);
+    border-radius: 9px;
+    margin: 0px 5px;
+    max-width: 1140px;
+    cursor: pointer;
+}
+.ponto.active {
+    background-color: rgb(54, 54, 54);
+}
+
+/* fim do slider */ 
+
+/* pesquisa */
+
+.primeira-pesquisa {
+    display: flex;
+    margin-bottom: 50px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.primeira-pesquisa img {
+    border-radius: 5px;
+}
+.title-princ {
+    display: flex;
+    margin-bottom: 50px;
+}
+.pesquisa h1 {
+    font-size: 19px;
+}
+.img-cidades {
+    display: flex;
+    height: 150px;
+    padding-bottom: 20px;
+}
+.pesquisa {
+    display: flex;
+    height: 265px;
+}
+.pesquisa li, .pesquisa li a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+.options {
+    padding-top: 10px;
+}
+.Regiao-BeloHorizonte,
+.Regiao-saopaulo,
+.Regiao-riodejaneiro,
+.Regiao-portoalegre {
+    width: 280px;
+    flex-direction: row;
+}
+.Regiao-BeloHorizonte a:hover,
+.Regiao-saopaulo a:hover,
+.Regiao-riodejaneiro a:hover,
+.Regiao-portoalegre a:hover {
+    color: #005fa7e5;
+}
+
+/* fim da pesquisa */
+
+/* banner */ 
+
+#banner {
+    display: flex;
+    height: 550px;
+    background-image: url(./img/img/8.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.text {
+    display: flex;
+    max-width: 1140px;
+    color: #ccc;
+    background-color: rgba(255, 255, 255, 0.164);
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.text h1 {
+    display: flex;
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    justify-content: center;
+}
+.text h2 {
+    display: flex;
+    margin-bottom: 20px;
+    font-size: 30px;
+    justify-content: center;
+}
+.text h3 {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+}
+
+/* fim do banner */
+
+/* informacoes */ 
+
+#informacoes {
+    display: flex;
+    height: 400px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: rgba(0, 0, 0, 0.897);
+    padding: 10px;
+}
+.info-compl {
+    display: flex;
+    flex-direction: column;
+    max-width: 1140px;
+}
+.text-tit {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+.complemento {
+    display: flex;
+}
+.comple1,
+.comple2,
+.comple3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+    margin-top: 30px;
+    max-width: 300px;
+}
+.comple1 img,
+.comple2 img,
+.comple3 img {
+    display: flex;
+    
+}
+.icon {
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: center;
+}
+.comple1 h1,
+.comple2 h1 ,
+.comple3 h1 {
+    display: flex;
+    font-size: 19px;
+    color: rgba(0, 0, 0, 0.842);
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+.comple1 p,
+.comple2 p,
+.comple3 p {
+    display: flex;
+    padding-top: 10px;
+    color: rgba(0, 0, 0, 0.603);
+    text-align: justify;
+}
+.widget-title-bar {
+    display: flex;
+    width: 100%;
+    font-size: 1px;
+    background-color: #005fa750;
+    margin-top: 10px;
+}
+
+/* fim de informacoes */ 
+
+/* rodapé */ 
+
+footer {
+    height: auto;
+    background-color: #005fa7e5;
+    margin-top: 50px;
+    color: rgb(182, 182, 182);
+}
+.info1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.quem-somos {
+    padding-right: 140px;
+}
+.quem-somos p {
+    display: flex;
+    padding-top: 10px;
+    color: #ccc;
+}
+.contato {
+    padding-right: 140px;
+}
+.contato li, .contato li a,
+.redes li, .redes li a {
+    list-style: none;
+    text-decoration: none;
+    padding-top: 10px;
+    color: #ccc;
+}
+.dev {
+    display: flex;
+    height: 50px;
+    background-color: rgba(0, 1, 8, 0.925);
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.title1, .title2 {
+    display: flex;
+    font-size: 7px;
+    color: #ccc;
+}
+.redes img {
+    display: flex;
+    height: 20px;
+    width: 20px;
+
+}
+
+/* fim do rodapé */ 
