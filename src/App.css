@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.body {
+    background: #01182D;
+    background-image: url(./components/image-login/bg-stars.svg);
+    height: 100%;
+    width: 100%;
+    color: #6AD1FF;
+}
+.header {
+    display: flex;
+    width: 100%;
+    margin: 20px 0px;
+    justify-content: center;
+    align-items: center;
+}
+.header button {
+    position: absolute;
+    margin-left: 85%;
+    padding: 10px 30px;
+    border: 0;
+    background-color: green;
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+Link {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.carregamento {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+/*Page-login*/
+.page-login {
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.page-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    background-color: #000C16;
+    border: 1px solid #6AD1FF;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.274);
+}
+.page-form  h1 {
+    padding-bottom: 30px;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.692);
+}
+.page-form form {
+    display: flex;
+    flex-direction: column;
+}
+.page-form label {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 14px;
+    padding-bottom: 5px;
+    color: #FFFFFF;
+}
+.page-form input {
+    margin-bottom: 20px;
+    padding: 5px;
+    border: 1px solid #6AD1FF;
+    background-color: #000C16;
+    color: white;
+}
+
+/*cadastro-novo usuário*/
+.formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    background-color: #000C16;
+    border: 1px solid #6AD1FF;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.274);
+}
+.formulario label {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 14px;
+    padding-bottom: 5px;
+    color: #FFFFFF;
+}
+.formulario h1 {
+    padding-bottom: 30px;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.692);
+}
+.formulario input {
+    margin-bottom: 20px;
+    padding: 5px;
+    border: 1px solid #6AD1FF;
+    background-color: #000C16;
+    color: white;
+}
+.formulario select {
+    margin-bottom: 20px;
+    padding: 5px;
+    border: 1px solid #6AD1FF;
+    background-color: #000C16;
+    color: white;
+}
+.formulario button {
+    padding: 10px;
+    width: 250px;
+    text-transform: uppercase;
+    margin: auto;
+    border: 1px solid #6AD1FF;
+    background-color: #000C16;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+}
+.title-principal {
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.692);
+}
+.title-sec {
+    color: #FFFFFF;
+}
+
+/* return users*/
+.return-users {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.users {
+    background-color: #000C16;
+    margin: 25px 0px;
+    border: 1px solid #6AD1FF;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.26);
+    padding: 25px;
+    width: 500px;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.users h1 {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+}
+.users p {
+    font-size: 14px;
+}
+.btna {
+    border: 1px solid #6AD1FF;
+    margin: 15px 3px;
+    padding: 10px;
+    width: 150px;
+    background-color: #000C16;
+    color: white;
+    font-size: 10px;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+/*edit-sers*/
+.edit-users {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.form-data {
+    background-color: #000C16;
+    border: 1px solid #6AD1FF;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.274);
+}
+.form-data form {
+    display: flex;
+    flex-direction: column;
+}
+.form-data h1 {
+    padding-bottom: 30px;
+    font-size: 25px;
+}
+.edit-button button {
+    border: 1px solid #6AD1FF;
+    padding: 6px 30px;
+    margin: 15px 3px;
+    background-color: #000C16;
+    color: #FFFFFF;
+    border-radius: 10px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.form-data select {
+    margin-bottom: 20px;
+    padding: 5px;
+    border: 1px solid #6AD1FF;
+    background-color: #000C16;
+    color: white;
+}
+.form-data label {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 14px;
+    padding-bottom: 5px;
+    color: #FFFFFF;
+}
+.form-data input {
+    margin-bottom: 20px;
+    padding: 5px;
+    border: 1px solid #6AD1FF;
+    background-color: #000C16;
+    color: white;
+}
+
+@media (max-width: 1024px) {
+    .header button {
+        margin-left: 80%;
+        padding: 6px 10px;
+        font-size: 13px;
+    }
+    .title-principal {
+        font-size: 30px;
+        padding: 0px 20px;
+    }
+}
+
+@media(max-width:769px) {
+    .header button {
+        margin-left: 70%;
+        padding: 6px 10px;
+        font-size: 13px;
+    }
+    .title-principal {
+        font-size: 30px;
+        padding: 0px 20px;
+        margin-right: 150px;
+    }
+}
+
+@media(max-width: 509px){
+    .page-form h1 {
+        padding-bottom:20px;
+        font-size: 20px;
+    }
+    .carregamento {
+        font-size: 20px;
+    }
+    .title-principal {
+        font-size: 20px;
+        padding: 0px 20px;
+        max-width: 300px;
+        margin-right: 150px;
+    }
+    .title-sec {
+        font-size: 16px;
+    }
+    .users {
+        padding: 15px;
+        width: 310px;
+    }
+    .users h1 {
+        font-size: 12px;
+        text-transform: uppercase;
+        color: white;
+    }
+    .users p {
+        font-size: 12px;
+    }
+    .btna {
+        padding: 6px;
+    }
+    .secondstyle {
+        margin: 10px 5px;
+        font-size: 9px;
+    }
+    .header button {
+        margin-left: 55%;
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+    .form-data h1 {
+        font-size: 16px;
+    }
+    .form-data label, .formulario label {
+        font-size: 12px;
+    }
+    .formulario h1 {
+        font-size: 14px;
+    }
+}
