@@ -1,4 +1,4 @@
-import { useState, ChangeEvent } from 'react'
+import { useState } from 'react'
 import { Navigate} from 'react-router-dom';
 
 export const PageLogin = () => {
@@ -23,7 +23,7 @@ export const PageLogin = () => {
                         <input type="password" placeholder="Digite sua senha..." onChange={(e)=>{setSenha(e.target.value)}}/>
                     </form>
                     <div>
-                        <button type="button" className="btn btn-success" disabled={Nome == '' || Senha == ''} onClick={()=>setAtualizar(true)}>Entrar</button>
+                        <button type="button" className="btn btn-success" disabled={Nome === '' || Senha === ''} onClick={()=>setAtualizar(true)}>Entrar</button>
                     </div>
                 </div>
             </div>
