@@ -1,6 +1,5 @@
-import { api } from '../../api';
 import { useState } from 'react'
-import {BrowserRouter as Router, Route, Routes, Link, Navigate} from 'react-router-dom';
+import {Navigate} from 'react-router-dom';
 
 export const CreateUser = () => {
     const [Name, setName] = useState('')
@@ -33,7 +32,7 @@ export const CreateUser = () => {
         })
         .then(response => {
             let resp = response.status
-            if(resp == 201){
+            if(resp === 201){
                 setAtualizar(true)
             }
             setStatusApi(resp)
@@ -57,7 +56,7 @@ export const CreateUser = () => {
                     <div className='d-flex'>
                         <label htmlFor="" className="me-3">status:</label>
                         <div>
-                            <input type="radio" value={'active'} name='status' checked={Status=="active"} onClick={ () => {setStatus('active')}}/> <label htmlFor="" className="me-3 px-1">Ativo</label>
+                            <input type="radio" value={'active'} name='status' checked={Status==="active"} onClick={ () => {setStatus('active')}}/> <label htmlFor="" className="me-3 px-1">Ativo</label>
                             <input type="radio" value={'inactive'} name='status' onClick={ () => {setStatus('inactive')}}/> <label htmlFor="" className="me-3 px-1">Inativo</label>
                         </div>
                     </div>
@@ -70,11 +69,11 @@ export const CreateUser = () => {
                     </select>
     
                     
-                    <button type="button" className="btn btn-success" onClick={CreatNewUsers} disabled={Name == '' || Email == '' ? true : false}
+                    <button type="button" className="btn btn-success" onClick={CreatNewUsers} disabled={Name === '' || Email === '' ? true : false}
                     >Cadastrar Usuário</button>
     
                     <div>
-                        {StatusApi == 422 && <h5 className="text-danger text-center m-4">Preencha todos os campos corretemente!</h5>}
+                        {StatusApi === 422 && <h5 className="text-danger text-center m-4">Preencha todos os campos corretemente!</h5>}
                     </div>
                 </form>
                 
