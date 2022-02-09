@@ -1,5 +1,4 @@
 import { useParams } from "react-router-dom";
-import { api } from '../../api';
 import { useState, useEffect } from "react";
 import { Navigate} from 'react-router-dom';
 
@@ -19,7 +18,7 @@ export const EditUsersPage = () => {
 
     useEffect(()=>{
         GetUsers()
-    },[])
+    },[GetUsers])
     
     const GetUsers = async () => {
         let url: RequestInfo = api.baseURL
@@ -57,7 +56,7 @@ export const EditUsersPage = () => {
         })
         .then(response => {
             let resp = response.status
-            if(resp == 200){
+            if(resp === 200){
                 setAtualizar(true)
             }
         })
@@ -83,8 +82,8 @@ export const EditUsersPage = () => {
                         <div className="d-flex">
                             <label className="me-3">status:</label>
                             <div>
-                                <input type="radio" value={Status} name='status' checked={Status=="active"} onClick={ () => {setStatus('active')}}/> <label htmlFor="" className="me-3 px-1">Ativo</label>
-                                <input type="radio" value={Status} name='status' checked={Status=="inactive"} onClick={ () => {setStatus('inactive')}}/> <label htmlFor="" className="me-3 px-1">Inativo</label>
+                                <input type="radio" value={Status} name='status' checked={Status==="active"} onClick={ () => {setStatus('active')}}/> <label htmlFor="" className="me-3 px-1">Ativo</label>
+                                <input type="radio" value={Status} name='status' checked={Status==="inactive"} onClick={ () => {setStatus('inactive')}}/> <label htmlFor="" className="me-3 px-1">Inativo</label>
                             </div>
                         </div>
                         <label htmlFor="">Gênero:</label>
@@ -98,7 +97,7 @@ export const EditUsersPage = () => {
                             <button type="button" className="btn btn-success" onClick={() => UpdateUsers()}>Salvar Edição</button>
                         </div>
                         <div>
-                            {StatusApi == 402 && <h5 className="text-danger text-center">Preencha todos os campos corretemente!</h5>}
+                            {StatusApi === 402 && <h5 className="text-danger text-center">Preencha todos os campos corretemente!</h5>}
                         </div>
                     </form>
                 </div>
