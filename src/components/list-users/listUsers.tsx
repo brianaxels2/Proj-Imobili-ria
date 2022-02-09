@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { allUsers } from '../../types/Users';
 import { FaTrash, FaEdit, FaUserPlus } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import { api } from '../../api';
 
 export const ListUsers = () => {
     const [users, setUsers] = useState<allUsers[]>([]);
@@ -17,7 +16,7 @@ export const ListUsers = () => {
 
     useEffect( () => {
         apiUsers()
-    },[]);
+    },[apiUsers]);
 
     //  Result-users
     const apiUsers = async () => {
@@ -98,7 +97,7 @@ export const ListUsers = () => {
                     ))}
 
                   <div className='btn'>
-                    <button className='btna' disabled={nextUsers == 1 ? true : false} onClick={exit}>Volta Página</button>
+                    <button className='btna' disabled={nextUsers === 1 ? true : false} onClick={exit}>Volta Página</button>
                     <button className='btna' onClick={next}>Próxima Página</button>
                   </div>
                 </div>
